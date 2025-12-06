@@ -32,7 +32,7 @@ export interface ChatMessage {
 }
 
 // Updated Status Flow: Requested -> Received -> Graded -> Documented -> Completed
-export type ReturnStatus = 'Pending' | 'Requested' | 'Received' | 'Approved' | 'Graded' | 'Documented' | 'Completed' | 'Rejected' | 'Canceled';
+export type ReturnStatus = 'Pending' | 'Requested' | 'Received' | 'Approved' | 'Graded' | 'Documented' | 'Completed' | 'Rejected';
 
 // Operational Types
 // Expanded to include specific imperfections under 'Good' category
