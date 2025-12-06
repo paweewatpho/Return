@@ -30,9 +30,6 @@ const StockSummary: React.FC = () => {
     }>();
 
     items.forEach(item => {
-      // Skip items with 'Canceled' status
-      if (item.status === 'Canceled') return;
-      
       if (!item.productCode || !item.disposition || item.disposition === 'Pending') return;
 
       const key = `${item.productCode}-${item.disposition}`;
